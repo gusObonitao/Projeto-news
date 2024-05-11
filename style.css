@@ -1,0 +1,56 @@
+/*MENU DE NAVEGAÇÃO*/
+nav {
+    display: flex;
+    flex-direction: column;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+}
+nav li {
+    display: inline;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    display: flex;
+}
+/*BARRA LATERAL */
+.side_bar_left{
+    height: 100%;
+    width: 15%;
+    display: inline-block;
+}
+.side_bar_left #side_bar_itens {
+    list-style-type: none;
+    margin-left: 110px;
+    margin-top: 30px;
+}
+.side_bar_left #side_bar_itens li {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.side_bar_left #side_bar_itens li a{
+    text-decoration: none;
+    color: black;
+}
+/* CONTEUDO PRINCIPAL */
+.content {
+    display: inline-block;
+    width: 60%;
+    position: relative;
+}
+.content #img_politico {
+    width: 50%;
+    height: 30%;
+}
+/* MENU LATERAL ESQUERDO */
+.side_bar_right {
+    display: inline-block;
+    width: 15%;
+}
