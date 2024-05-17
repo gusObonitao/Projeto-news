@@ -11,81 +11,186 @@
 
 <body>
     <!--Menu de navegação-->
-    <nav>
-        <ul>
-            <h1>Logo News</h1>
-            <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
-            <li><a href=""><i class="fa-solid fa-newspaper"></i>Noticias</a></li>
-            <li><a href=""><i class="fa-solid fa-film"></i>Videos</a></li>
-            <li><a href=""><i class="fa-solid fa-arrow-trend-up"></i>Tendências</a></li>
-            <li><a href=""><i class="fa-solid fa-bell"></a></i></li>
-            <li><i class="fa-solid fa-bookmark"></i></li>
-            <input type="text" placeholder="Pesquisa"><i class="fa-solid fa-magnifying-glass"></i>
-        </ul>
-    </nav>
-    <section>
-        <!--Menu lateral ESQUERDO-->
-        <div class="side_bar_left">
-            <div id="side_bar_itens">
-                <h3>Categorias</h3>
-                <li><a href="">Politica</a></li>
-                <li><a href="">Nacional</a></li>
-                <li><a href="">Internacional</a></li>
-                <li><a href="">Negocios</a></li>
-                <li><a href="">Finanças</a></li>
-                <li><a href="">Esportes</a></li>
-                <li><a href="">Saúde</a></li>
-                <li><a href="">Tecnologia</a></li>
-                <li><a href="">Empregos</a></li>
-                <li><a href="">Espaço Kids</a></li>
-                <li><a href="">Games</a></li>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>
+                    Logo News
+                </h1>
             </div>
-        </div>
-
-        <!--CONTEUDO PRINCIPAL-->
-        <div class="content">
-            <h2>Categoria da noticia atual</h2>
-            <img id="img_politico" src="./imgs/img_politics.png" alt="img_politics"> <br>
-            <h5>Sub categoria Noticia</h5>
-            <h2>Titulo Noticia</h2>
-            <p>
-                Autor da noticia
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet. Quo molestiae accusantium aut rerum omnis eos omnis quod et <br>molestias
-                perspiciatis. In sint dicta quo consequuntur sapiente eum soluta quidem aut <br>corrupti delectus cum dolorem
-                aperiam? Non sunt quia id omnis molestiae aut rerum facilis <br>sed nihil ipsa ut officiis facere. Aut itaque
-                omnis est omnis repellat et nihil quaerat ad <br>omnis nisi ex omnis delectus et beatae commodi. <br>
-                In corrupti sint est dolorum galisum ea nobis maxime et accusantium porro. 33 beatae debitis ea <br>pariatur
-                fugit rem sapiente quisquam aut minima beatae ut cupiditate omnis et quia cupiditate sit <br>sequi laboriosam.
-                <br>
-                A quod provident et corporis quia ut placeat dicta ea odio blanditiis a minima voluptatum vel <br>aspernatur
-                velit. Et consequatur natus non dolores assumenda aut explicabo culpa quo voluptas <br>voluptatum est voluptatum
-                nobis et voluptatum ipsa aut sint consequuntur? Et consequatur Quis et <br>reiciendis fuga est velit eius sed
-                provident voluptas sit autem facere et repellendus dolore eos <br>earum quaerat. <br>
-            </p>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item">
+                        <a href="" class="nav-links">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-links">
+                            <i class="fa-solid fa-newspaper"></i>
+                            Noticias
+                        </a>
+                    </li class="nav-item">
+                    <li class="nav-item">
+                        <a href="" class="nav-links">
+                            <i class="fa-solid fa-film"></i>
+                            Videos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-links">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            Tendências
+                        </a>
+                    </li>
+                </ul>   
+            </div>
+            <div class="nav-button">     
+                    <input type="text" placeholder="Pesquisa">
+                    <button>
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </button>
+            </div>
             
         </div>
+    </header>
+<main>
+    <!--Menu lateral ESQUERDO-->
+    <aside id="left">
+        <div class="side-bar-itens">   
+            <div class="side-bar-links">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="">Politica</a></li>
+                    <li><a href="">Nacional</a></li>
+                    <li><a href="">Internacional</a></li>
+                    <li><a href="">Negocios</a></li>
+                    <li><a href="">Finanças</a></li>
+                    <li><a href="">Esportes</a></li>
+                    <li><a href="">Saúde</a></li>
+                    <li><a href="">Tecnologia</a></li>
+                    <li><a href="">Empregos</a></li>
+                    <li><a href="">Espaço Kids</a></li>
+                    <li><a href="">Games</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+        <!--CONTEUDO PRINCIPAL-->
+    <article>   
+        <h2>Categoria da noticia atual</h2>
+        <img id="main-img" src="./imgs/img_politics.png" alt="img_politics"> <br>
+        <h5><a href="#">Sub categoria Noticia</a></h5>
+        <h2>Titulo Noticia</h2>
 
+        <div class="news-content">
+            <p class="autor">
+                Autor da noticia
+            </p>
+            <ul>
+                <li><a href=""><i class="fa-regular fa-bookmark"></i>Salvar esta noticia</a></li>
+                <li><a href=""><i class="fa-solid fa-share-nodes"></i>Compartilhar</a></li>
+            </ul>
+            <p class="conteudo">
+                Lorem ipsum dolor sit amet. Quo molestiae accusantium aut rerum omnis eos omnis quod et molestias
+                perspiciatis. In sint dicta quo consequuntur sapiente eum soluta quidem aut corrupti delectus cum dolorem
+                aperiam? Non sunt quia id omnis molestiae aut rerum facilis sed nihil ipsa ut officiis facere. Aut itaque
+                omnis est omnis repellat et nihil quaerat ad omnis nisi ex omnis delectus et beatae commodi.
+                In corrupti sint est dolorum galisum ea nobis maxime et accusantium porro. 33 beatae debitis ea pariatur
+                fugit rem sapiente quisquam aut minima beatae ut cupiditate omnis et quia cupiditate sit sequi laboriosam.
+        
+                A quod provident et corporis quia ut placeat dicta ea ,odio blanditiis a minima voluptatum vel aspernatur
+                velit. Et consequatur natus non dolores assumenda aut explicabo culpa quo voluptas voluptatum est
+                voluptatum
+                nobis et voluptatum ipsa aut sint consequuntur? Et consequatur Quis et reiciendis fuga est velit eius sed
+                provident voluptas sit autem facere et repellendus dolore eos earum quaerat. <br>
+                <img src="./imgs/news_2.png" width="800" alt="" srcset=""> <br>
+                Eos minima rerum vel commodi possimus et deserunt ipsam ut voluptas explicabo ea minima consectetur sed
+                dolorem incidunt? Et numquam odio est dolorum doloremque ut consequatur laboriosam vel quisquam illo. Qui
+                quia commodi a esse natus ut rerum sunt. 
+                Lorem ipsum dolor sit amet. Id voluptas rerum qui aperiam iure et debitis modi qui consequuntur quae vel
+                iste numquam. Est ipsam dolor cum aspernatur dolorum aut repudiandae voluptatem aut earum velit aut tempora
+                porro 33 sint quia ut dolorem rerum. <br>
+                <img src="./imgs/news_3.png" width="800" alt=""> <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+            </p>
+        </div>
+    </article> 
         <!--MENU LATERAL DIREITO-->
-        <div class="side_bar_right">
+    <aside id="right">
+        <div class="side-bar-right">
             <h2>
                 Ultimas Noticias
             </h2> <br>
-            <img src="./imgs/img_news.png" width="400" height="200" alt=""> <br>
-            <h5>Sub categoria noticia</h5>
-            <p>Resumo da noticia <br> Quo laborum suscipit est quibusdam molestiae</p> <br>
-            <img src="./imgs/img_sports.png" width="300" height="200" alt="">
-            <h5>Sub categoria noticia</h5>
-            <p>Resumo da noticia <br> Quo laborum suscipit est quibusdam molestiae</p> <br>
-            <img src="./imgs/img_finances.png" width="400" height="200" alt="">
-            <h5>Sub categoria noticia</h5>
-            <p>Resumo da noticia <br> Quo laborum suscipit est quibusdam molestiae</p> <br>
+
+            <img src="./imgs/img_news.png" alt=""> <br>
+
+            <h5><a href="#">Sub categoria noticia</a></h5>
+
+            <p> <span>Resumo da noticia:</span> Quo laborum suscipit est quibusdam molestiae, Lorem ipsum dolor sit amet. Quo molestiae accusantium aut rerum omnis eos omnis quod et molestias</p> <br>
+
+            <img src="./imgs/img_sports.png" alt="">
+
+            <h5><a href="#">Sub categoria noticia</a></h5>
+
+            <p> <span>Resumo da noticia:</span> Quo laborum suscipit est quibusdam molestiae, Lorem ipsum dolor sit amet. Quo molestiae accusantium aut rerum omnis eos omnis quod et molestias</p> <br>
+
+            <img src="./imgs/img_finances.png" alt="">
+
+            <h5><a href="#">Sub categoria noticia</a></h5>
+
+            <p> <span>Resumo da noticia:</span> Quo laborum suscipit est quibusdam molestiae, Lorem ipsum dolor sit amet. Quo molestiae accusantium aut rerum omnis eos omnis quod et molestias</p> <br>
+
+            <img src="./imgs/img-saude" alt="">
+
+            <h5><a href="#">Sub categoria noticia</a></h5>
+
+            <p> <span>Resumo da noticia:</span> Quo laborum suscipit est quibusdam molestiae, Lorem ipsum dolor sit amet. Quo molestiae accusantium aut rerum omnis eos omnis quod et molestias</p> <br>
+
+            <img src="./imgs/img-games.png" alt="">
+
+            <h5><a href="#">Sub categoria noticia</a></h5>
+
+            <p> <span>Resumo da noticia:</span> Quo laborum suscipit est quibusdam molestiae, Lorem ipsum dolor sit amet. Quo molestiae accusantium aut rerum omnis eos omnis quod et molestias</p> <br>
         </div>
-    </section>
+    </aside>
+</main>    
     <!--RODAPÉ-->
     <footer>
+        <div class="footer-content">
+            <div class="socials">
+                <h3>Fale Conosco</h3>
+                <ul>
+                    <li><a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><i  id="whats"class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
 
+                    <li><a  href="https://www.instagram.com" target="_blank"><i id="insta" class="fa-brands fa-instagram"></i>Instagram</a></li>
+
+                    <li><a href="https://www.facebook.com" target="_blank"><i id="face" class="fa-brands fa-facebook"></i>Facebook</a></li>
+
+                    <li><a href="https://twitter.com/" target="_blank"><i id="x"  class="fa-brands fa-x-twitter"></i>Twitter</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a target="_blank" href="#">Principais editoriais</a></li>
+                        <li><a target="_blank" href="#">Termos de uso</a></li>
+                        <li><a target="_blank" href="#">Politicas de privacidade</a></li>
+                    </ul>
+            </div>
+            <div class="copyright">
+                <h3>Termos de Uso</h3>
+                <p> <a target="_blank" href="https://www.planalto.gov.br/ccivil_03/leis/l9610.htm"></a> &#169 all rights reserverds.</p>
+            </div>
+        </div>
     </footer>
 </body>
 
