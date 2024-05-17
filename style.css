@@ -296,3 +296,60 @@ aside#right {
     text-transform: uppercase;
     margin-top: 80px;
 }
+
+/* MEDIA QUERY - TABLETS */
+
+@media screen and (max-width: 768px){
+    .nav-button input {
+        display: none;
+    }
+    .nav-button button {
+        display: none;
+    }
+    main {
+        display: block;
+    }
+    aside#left, aside#right {
+        display: none;
+    }
+    article {
+        display: block;
+        border-right: none;
+        
+        width: 100%;
+    }
+    #main-img {
+        width: 93%;
+        margin-left: 28px;
+    }
+    article img {
+        margin-left: 0;
+        width: 100%;
+    }
+    article h5 a {
+        margin-left: 35px;
+    }
+    .autor {
+        margin-left: 15px;
+    }
+    
+    .socials {
+        margin-left: 0;
+    }
+    .socials ul {
+        padding-left: 0px;
+        margin-left: 27px;
+    }
+    .about {
+        margin-left: 0;
+    }
+    .about h3 {
+        margin-left: 0;
+    }
+    .about ul {
+        padding: 0;
+    }
+    .copyright {
+        margin-left: 0;
+    }
+}
